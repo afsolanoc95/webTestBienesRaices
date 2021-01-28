@@ -39,7 +39,7 @@ app.get('/', (req, res)=> {
  }
  res.send(salida);
 });*/
-app.get('/home', (req, res)=> {
+app.get('/', (req, res)=> {
     //res.send('Hello World')
     //para el handlebars
     res.render('home',{
@@ -86,3 +86,6 @@ app.get('/nosotros', (req, res)=> {
 app.listen(3000,()=>{
     console.log(`Escuchando peticiones en el puerto 3000`);
 });
+
+
+//https://afsolanoc-webserve.herokuapp.com/   deberia
