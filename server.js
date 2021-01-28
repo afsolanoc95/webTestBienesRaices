@@ -3,6 +3,9 @@ const express = require('express');
 const app = express();
 const hbs = require('hbs');
 
+// esto es para reconocer el puerto que me da heroku
+const port =process.env.PORT || 3000;
+//
 
 // para un html normal con la url /
 
@@ -83,8 +86,8 @@ app.get('/nosotros', (req, res)=> {
  
 //app.listen(3000)
 //tambien recibe callback
-app.listen(3000,()=>{
-    console.log(`Escuchando peticiones en el puerto 3000`);
+app.listen(port,()=>{
+    console.log(`Escuchando peticiones en el puerto ${port}`);
 });
 
 
